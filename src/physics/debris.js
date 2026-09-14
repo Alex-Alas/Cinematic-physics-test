@@ -20,7 +20,10 @@ for (let i = 0; i < SHARD_COUNT; i++) {
 }
 let shardCursor = 0;
 
-export function spawnShards(pos, n, baseVel) {
+const ZERO = new THREE.Vector3();
+
+/* baseVel is optional: a still burst (remover, popped balloon) inherits nothing. */
+export function spawnShards(pos, n, baseVel = ZERO) {
   for (let i = 0; i < n; i++) {
     const s = shards[shardCursor];
     shardCursor = (shardCursor + 1) % SHARD_COUNT;

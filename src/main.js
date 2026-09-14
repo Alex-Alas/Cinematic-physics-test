@@ -34,6 +34,11 @@ import './weapons/rocket.js';
 import { updateRockets } from './weapons/rocket.js';
 import './weapons/bomb.js';
 import { updateBombs } from './weapons/bomb.js';
+import './weapons/thruster.js';
+import './weapons/balloon.js';
+import './weapons/rope.js';
+import './weapons/remover.js';
+import './ui/spawnmenu.js';
 import { updateExplosives } from './entities/explosive.js';
 import { updateExplosions } from './weapons/explosion.js';
 
